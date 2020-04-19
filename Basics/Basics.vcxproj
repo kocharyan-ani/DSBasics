@@ -125,9 +125,13 @@
   <ItemGroup>
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LinkedStack.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="SparsePolinomial.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SparsePolinomial.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
