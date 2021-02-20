@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "SparsePolinomial.h"
+#include "SearchTree.h"
 
 int main() {
 	/* Linked Stack test
@@ -85,6 +85,34 @@ int main() {
 	std::cout << "s3 after derivative: " << s3.derivative();
 
 	std::cout << "s3 += s4 is: " << (s3 += s4);*/
+
+	/*const int N = 10;
+	int arr[N] = { 3, 4, 2, 8, 0, 11, 2, 9, 7, 3 };
+
+	Heap<int> heap;
+	for (int i = 0; i < N; ++i) {
+		heap.push(arr[i]);
+	}
+	for (int i = N - 1; i >= 0; --i) {
+		arr[i] = heap.max();
+		heap.pop();
+	}
+
+	for (int i = 0; i < N; ++i) {
+		std::cout << arr[i] << " ";
+	}
+	std::cout << std::endl;*/
+
+	SearchTree<int> tree;
+	tree.insert(10);
+	tree.insert(5);
+	tree.insert(8);
+	tree.insert(12);
+	tree.insert(14);
+	std::cout << tree;
+
+	tree.remove(10);
+	std::cout << tree;
 
 	return 0;
 }
